@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "REM", sans-serif;
+}
+
+body {
+  height: 100vh;
+  /*background: linear-gradient(135deg, #8052ec, #d161ff);*/
+  background-image: url(https://github.blog/wp-content/uploads/2021/11/ezgif-3-5a2ece833fc4-1.gif?fit=1200%2C508);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html {
+  font-size: 16px;
+}
+
+#title {
+  color: white;
+  text-align: center;
+  padding-top: 7.5vh;
+}
+
+.wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 60%;
+  left: 50%;
+}
+
+.container {
+  width: 65vmin;
+  height: 65vmin;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vmin;
+}
+
+.button-option {
+  background: #ffffff;
+  opacity: 90%;
+  height: 20vmin;
+  width: 20vmin;
+  border: none;
+  border-radius: 8px;
+  font-size: 12vmin;
+  color: #d161ff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#restart {
+  font-size: 1em;
+  padding: 0.6em;
+  border-radius: 8px;
+  background-color: #0a0027;
+  color: #ffffff;
+  position: relative;
+  border: none;
+  margin: 1em auto 0 auto;
+  display: inline-block;
+  justify-content: center;
+}
+
+#undo {
+  font-size: 1em;
+  padding: 0.6em;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #0a0027;
+  position: relative;
+  border: none;
+  margin: 1em auto 0 auto;
+  display: inline-block;
+  justify-content: center;
+}
+
+#redo {
+  font-size: 1em;
+  padding: 0.6em;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #0a0027;
+  position: relative;
+  border: none;
+  margin: 1em auto 0 auto;
+  display: inline-block;
+  justify-content: center;
+}
+
+.popup {
+  align-items: center;
+  justify-content: center;
+}
+
+#message {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.popup.hide {
+  display: none;
+}
