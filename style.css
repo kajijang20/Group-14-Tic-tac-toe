@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "REM", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-image: url(https://github.blog/wp-content/uploads/2021/11/ezgif-3-5a2ece833fc4-1.gif?fit=1200%2C508);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html {
+  font-size: 16px;
+}
+
+#title h1 {
+  text-align: center;
+  padding-top: 7.5vh;
+  color: white;
+  text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5), 0 0 0.125em hsla(320, 100%, 60%, 0.5), -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.125), 0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.25);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #3700b3, 0 0 20px #3700b3, 0 0 25px #3700b3, 0 0 30px #3700b3, 0 0 35px #3700b3;
+  }
+
+  to {
+    text-shadow: 0 0 10px #434343, 0 0 20px #985eff, 0 0 30px #985eff, 0 0 40px #985eff, 0 0 50px #985eff, 0 0 60px #985eff, 0 0 70px #985eff;
+  }
+}
+
+.wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 60%;
+  left: 50%;
+}
+
+.container {
+  width: 65vmin;
+  height: 65vmin;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vmin;
+}
+
+.button-option {
+  background: rgba(255, 255, 255, 0.9);
+  height: 20vmin;
+  width: 20vmin;
+  border: none;
+  border-radius: 8px;
+  font-size: 12vmin;
+  color: #d161ff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#restart {
+  font-size: 1em;
+  padding: 0.6em;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #3700b3;
+  border-width: 3px;
+  background: transparent;
+  color: #ffffff;
+  position: relative;
+  margin: 1em auto 0 auto;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#restart:hover {
+  background-color: #3700b3;
+}
+
+#undo {
+  font-size: 1em;
+  padding: 0.6em;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #985eff;
+  border-width: 3px;
+  background: transparent;
+  color: #ffffff;
+  position: relative;
+  margin: 1em auto 0 auto;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#undo:hover {
+  background-color: #985eff;
+}
+
+#redo {
+  font-size: 1em;
+  padding: 0.6em;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #985eff;
+  border-width: 3px;
+  background: transparent;
+  color: #ffffff;
+  position: relative;
+  margin: 1em auto 0 auto;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#redo:hover {
+  background-color: #985eff;
+}
+
+.popup {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(55, 0, 179, 0.85);
+  width: 40%;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#message {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.popup.hide {
+  display: none;
+}
